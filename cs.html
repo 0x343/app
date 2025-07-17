@@ -75,32 +75,11 @@
 </head>
 <body>
 
-  <center><video id="myVideo" src="video.mp4" loop controls></video></center>
+  <center><video src="video.mp4" autoplay muted loop></video></center>
 
 <center><button class="btn-neon" onclick="window.location.href='index'">
     <span>Back to Home</span>
   </button></center>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const video = document.getElementById("myVideo");
 
-    const playPromise = video.play();
-
-    if (playPromise !== undefined) {
-      playPromise.then(_ => {
-      }).catch(error => {
-        
-        console.log("Autoplay blocked, waiting for user interaction...");
-
-        const startOnClick = () => {
-          video.play();
-          document.removeEventListener("click", startOnClick);
-        };
-
-        document.addEventListener("click", startOnClick);
-      });
-    }
-  });
-</script>
 </body>
 </html>
