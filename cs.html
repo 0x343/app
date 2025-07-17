@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <titleComing Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Orbitron', sans-serif;
+      color: #0ff;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    video {
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #0ff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff33;
+    }
+
+    .btn-neon {
+      margin-top: 30px;
+      padding: 14px 32px;
+      font-size: 18px;
+      color: #0ff;
+      background: none;
+      border: 2px solid #0ff;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff44;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-neon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(0, 255, 255, 0.3), transparent);
+      transition: left 0.4s ease-in-out;
+      z-index: 1;
+    }
+
+    .btn-neon:hover::before {
+      left: 100%;
+    }
+
+    .btn-neon:hover {
+      color: #000;
+      background-color: #0ff;
+      box-shadow: 0 0 15px #0ff, 0 0 35px #0ff99;
+    }
+
+    .btn-neon span {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <video src="video.mp4" autoplay muted controls></video>
+
+  <button class="btn-neon" onclick="window.location.href='index'">
+    <span>Back to Home</span>
+  </button>
+
+</body>
+</html>
