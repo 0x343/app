@@ -1,5 +1,84 @@
 const styleTag = document.createElement("style");
 styleTag.innerHTML = `
   
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    @keyframes electricFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .video-container {
+      position: relative;
+      display: inline-block;
+      padding: 5px;
+      border-radius: 14px;
+      background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
+      background-size: 300% 300%;
+      animation: electricFlow 4s linear infinite;
+    }
+
+    .video-container::before {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      border-radius: 16px;
+      background: inherit;
+      z-index: -1;
+      filter: blur(10px);
+    }
+
+    video {
+      display: block;
+      max-width: 90vw;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid;
+    }
+
+    .btn-neon-electric {
+      margin-top: 30px;
+      padding: 14px 32px;
+      font-size: 18px;
+      color: #fff;
+      background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
+      background-size: 300% 300%;
+      animation: electricFlow 4s linear infinite;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 10px #0ff, 0 0 25px #ff00ff66;
+    }
+
+    .btn-neon-electric::before {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      border-radius: 12px;
+      background: inherit;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+    .btn-neon-electric:hover {
+      filter: brightness(1.2);
+    }
 `;
 document.head.appendChild(styleTag);
