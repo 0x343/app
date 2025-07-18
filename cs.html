@@ -4,91 +4,11 @@
   <meta charset="UTF-8">
   <title>Faylotto Coming Soon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-
-    body {
-      margin: 0;
-      background-color: #000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-      font-family: 'Orbitron', sans-serif;
-    }
-
-    @keyframes electricFlow {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .video-container {
-      position: relative;
-      display: inline-block;
-      padding: 5px;
-      border-radius: 14px;
-      background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
-      background-size: 300% 300%;
-      animation: electricFlow 4s linear infinite;
-    }
-
-    .video-container::before {
-      content: '';
-      position: absolute;
-      top: -2px; left: -2px; right: -2px; bottom: -2px;
-      border-radius: 16px;
-      background: inherit;
-      z-index: -1;
-      filter: blur(10px);
-    }
-
-    video {
-      display: block;
-      max-width: 90vw;
-      height: auto;
-      border-radius: 10px;
-      border: 1px solid;
-    }
-
-    .btn-neon-electric {
-      margin-top: 30px;
-      padding: 14px 32px;
-      font-size: 18px;
-      color: #fff;
-      background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffff);
-      background-size: 300% 300%;
-      animation: electricFlow 4s linear infinite;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      position: relative;
-      z-index: 1;
-      box-shadow: 0 0 10px #0ff, 0 0 25px #ff00ff66;
-    }
-
-    .btn-neon-electric::before {
-      content: '';
-      position: absolute;
-      top: -2px; left: -2px; right: -2px; bottom: -2px;
-      border-radius: 12px;
-      background: inherit;
-      filter: blur(8px);
-      z-index: -1;
-    }
-
-    .btn-neon-electric:hover {
-      filter: brightness(1.2);
-    }
-  </style>
+  <style> #preloader { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: z-index: 9999; display: flex; align-items: center; justify-content: center;}.loader { border: 4px solid #f0f0f0; border-top: 4px solid #00b7ff; border-radius: 50%; width: 40px; height: 40px; animation: spin 2s linear infinite;}@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); }} </style>
 </head>
 <body>
-  <div id="AnonymousXXX"></div>
+  <div id="preloader"><div class="loader"></div></div><div id="AnonymousXXX"></div>
 <script src="statis/CsHG54NjsaxSoxC.js"></script>
-  <script src="statis/Htz833kGFvtxH.js"></script>
+  <script src="statis/Htz833kGFvtxH.js"></script><script> window.addEventListener("load", function () { const preloader = document.getElementById("preloader"); preloader.style.display = "none"; }); </script>
 </body>
 </html>
