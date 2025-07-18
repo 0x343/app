@@ -253,7 +253,7 @@ footer {
     color: #1a88ff;
     text-shadow: 0 0 10px #1a88ff, 0 0 20px #1a88ff, 0 0 30px #1a88ff;
     box-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.8);
-    transform: rotate(360deg); /* Efek berputar */
+    transform: rotate(360deg);
 }
 
 .modal {
@@ -1015,7 +1015,7 @@ textarea:focus {
     </style>
 </head>
 <body>
-   <!-- Navbar -->
+
 <nav class="navbar">
     <div class="logo">
         <img src="img/logo.svg" alt="Faylotto" class="logo-img">
@@ -1048,19 +1048,16 @@ textarea:focus {
         <h3>Decentralizer Betting Web3 Social</h3>
         <br>
 
-       <!-- Notifikasi Popup -->
 <div id="notificationPopup" class="popup hidden" role="alert">
     <button id="closePopup" onclick="closePopup()">×</button>
     <p id="notificationMessage"></p>
 </div>
 
-<!-- Ikon Notifikasi -->
 <div id="notificationIcon" onclick="toggleNotificationList()">
     <img src="img/bell.svg" alt="Notifications">
     <span id="notificationBadge" class="hidden"></span>
 </div>
 
-<!-- Daftar Notifikasi -->
 <div id="notificationList" class="hidden">
     <div class="notification-header">
         <p>Notifications</p>
@@ -1076,7 +1073,6 @@ textarea:focus {
   <button id="downloadBtn">Download QR Link</button>
 </div>
        
-        <!-- Wallet Connection -->
         <center><button id="connectWallet" onclick="connectWallet()"><img src="img/connect.svg" alt="Wallet Icon" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">Connect Wallet</button>  
         <button id="disconnectWallet" onclick="disconnectWallet()" style="display:none;"><img src="img/close.svg" alt="Disconnect Icon" width="20" height="20" style="vertical-align: middle; margin-right: 5px;">Disconnect</button>
         </center>
@@ -1089,7 +1085,7 @@ textarea:focus {
         <hr style="background-color: #333333; height: 1px; border: none;">
         <h2>Place Bet</h2><br>
         <div class="button-container">
-    <!-- Dropdown Pools -->
+
     <div class="dropdown">
       <button class="dropbtn">
         Pools <span class="arrow">▼</span>
@@ -1104,7 +1100,6 @@ textarea:focus {
       </div>
     </div>
 
-    <!-- Dropdown Select Chain -->
     <div class="dropdown">
       <button class="dropbtn">
         Select Chain <span class="arrow">▼</span>
@@ -1169,7 +1164,7 @@ textarea:focus {
 >
 </div>
        <br>
-       <!-- Prize Table -->
+
         <div id="prizes" class="section-box">
         <center><h2>4D ETH Prize Payouts</h2></center>
             <table>
@@ -1204,7 +1199,6 @@ textarea:focus {
     <button onclick="window.open('claim', '_blank')"><img src="img/claim.svg" alt="Lotto" style="width: 28px; height: 28px;">Claim</button>
 </div> <!-- Penutupan <div> harus ada di sini -->
        
-        <!-- Modal MyBets -->
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('myModal')">&times;</span>
@@ -1217,47 +1211,12 @@ textarea:focus {
     </div>
 </div>
 
-       <!-- Menu Modal -->
-<div id="menuModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('menuModal')">&times;</span>
-        <h2>Menu</h2>
-        <table class="menu-table">
-            <tr>
-                <td><img src="img/hk.svg" alt="HK"></td>
-                <td><a href="hk" target="_blank">Hong Kong (HK)</a></td>
-            </tr>
-            <tr>
-                <td><img src="img/sgp.svg" alt="SGP"></td>
-                <td><a href="sgp" target="_blank">Singapore (SGP)</a></td>
-            </tr>
-            <tr>
-                <td><img src="img/syd.svg" alt="SYD"></td>
-                <td><a href="syd" target="_blank">Sydney (SYD)</a></td>
-           </tr>
-            <tr>
-                <td><img src="img/chi.svg" alt="CHI"></td>
-                <td><a href="chi" target="_blank">China (CHI)</a></td>
-            </tr>
-            <tr>
-                <td><img src="img/mc.svg" alt="MC"></td>
-                <td><a href="mc" target="_blank">Cambodia (MC)</a></td>
-            </tr>
-            <tr>
-                <td><img src="img/be.svg" alt="BE"></td>
-                <td><a href="be" target="_blank">Bull Eye (BE)</a></td>
-            </tr>
-        </table>
-    </div>
-</div>
-
-       <!-- Modal untuk menampilkan hasil -->
 <div id="resultModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('resultModal')">&times;</span>
         <h2>Hong Kong (HK) Results Today</h2>
         <br>
-        <!-- Tabel Utama (Empat Ball Utama) -->
+
         <table class="lottery-table">
             <thead>
                 <tr>
@@ -1277,7 +1236,7 @@ textarea:focus {
             </tbody>
         </table>
         <br>
-        <!-- Riwayat Hasil 7 Hari Terakhir -->
+
         <h3>History (Last 7 Days)</h3>
         <br>
         <table class="history-table">
@@ -1345,7 +1304,6 @@ textarea:focus {
     </div>
 </div>
 
-           <!-- Privacy Policy Modal -->
 <div id="modalPrivacyLottoChain" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000000bb; z-index:9999; overflow:auto;">
   <div style="background:#fff; margin:5% auto; padding:20px; width:90%; max-width:720px; border-radius:10px; position:relative;">
     <h2 style="margin-top:0;">Privacy Policy</h2>
@@ -1415,7 +1373,6 @@ Continued use of the platform after the changes will be considered as acceptance
       <p><strong>I. Conclusion:</strong><br>This policy is part of the overall legal and ethical framework in the management and operation of Faylotto 2025. We encourage every user to understand and carry out their roles and responsibilities wisely in this decentralized ecosystem.</p>
     </div>
     
-    <!-- Checkbox -->
 <div style="display: flex; justify-content: flex-start; align-items: center; margin-left: 0%;">
   <input type="checkbox" id="privacyCheckbox" style="width:auto; height:auto; margin-right:6px;" />
   <label for="privacyCheckbox" style="color:#00c851;">I have read and agree to the Privacy Policy</label>
@@ -1426,7 +1383,6 @@ Continued use of the platform after the changes will be considered as acceptance
   Please check the agreement box first!
 </div>
 
-<!-- Button -->
 <div style="margin-top:15px; text-align:center;">
   <button id="agreePrivacyBtn" style="display:none; padding:10px 20px; background:#1a88ff; color:#fff; border:none; border-radius:5px; opacity:0.5; pointer-events:none;">
     Agree and Continue
@@ -1435,7 +1391,6 @@ Continued use of the platform after the changes will be considered as acceptance
   </div>
 </div>
 
-        <!-- Footer -->
 <footer>
     <div id="footer" class="social-icons">
         <a href="https://x.com/FaylottoXyz" target="_blank"><i class="fa-brands fa-twitter"></i></a>
