@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faylotto Decentralized Betting Web3 Social</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Favicons -->
     <link href="img/logo.svg" rel="icon">
     <link href="img/logo.svg" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
@@ -26,13 +25,12 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    font-size: 1rem; /* Gunakan rem agar fleksibel */
-    padding-top: 70px; /* Memberikan ruang untuk navbar */
+    font-size: 1rem;
+    padding-top: 70px;
 }
 
-/* Container */
 .container {
-    width: 100%; /* Gunakan persentase agar fleksibel */
+    width: 100%;
     max-width: 1250px;
     margin: auto;
     padding: 20px;
@@ -42,10 +40,9 @@ body {
     backdrop-filter: blur(10px);
     box-sizing: border-box;
     align-items: center;
-    margin-top: 20px; /* Tambahkan jarak dari navbar */
+    margin-top: 20px;
 }
 
-/* Media Query untuk layar kecil (Laptop kecil & Tablet) */
 @media (max-width: 1024px) {
     body {
         font-size: 0.9rem;
@@ -55,7 +52,6 @@ body {
     }
 }
 
-/* Media Query untuk layar sangat kecil (Tablet & Mobile) */
 @media (max-width: 768px) {
     body {
         font-size: 0.8rem;
@@ -66,7 +62,6 @@ body {
     }
 }
 
-/* Media Query untuk layar besar (Monitor besar & Ultrawide) */
 @media (min-width: 1600px) {
     body {
         font-size: 1.2rem;
@@ -76,7 +71,6 @@ body {
     }
 }
 
-/* Kolom Input dengan Efek Glassmorphism */
 input {
     display: block;
     margin: 10px auto;
@@ -99,9 +93,8 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Efek Neon Biru Glassmorphism saat Hover */
 input:hover {
-    background: rgba(0, 0, 255, 0.2); /* Biru neon transparan */
+    background: rgba(0, 0, 255, 0.2);
     box-shadow: 0 0 15px rgba(0, 153, 255, 0.8), 
                 0 0 25px rgba(0, 153, 255, 0.6), 
                 0 0 35px rgba(0, 153, 255, 0.4);
@@ -124,10 +117,9 @@ button:not(#closePopup) {
  .button-container:not(#closePopup) {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Jarak antar tombol diperbesar */
+    gap: 20px;
  }
 
-/* Efek Neon Glow */
 button:not(#closePopup)::before {
     content: "";
     position: absolute;
@@ -140,7 +132,6 @@ button:not(#closePopup)::before {
     opacity: 1;
 }
 
-/* Efek Hover */
 button:not(#closePopup):hover::before {
     filter: blur(1.2em);
     opacity: 1;
@@ -151,7 +142,6 @@ button:not(#closePopup):hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Efek Tekan */
 button:not(#closePopup):active {
     transform: scale(0.95);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -161,7 +151,6 @@ button:not(#closePopup):active::before {
     filter: blur(0.2em);
 }
 
-/* Efek Gelombang saat Diklik */
 button:not(#closePopup)::after {
     content: "";
     position: absolute;
@@ -180,7 +169,6 @@ button:not(#closePopup):active::after {
     opacity: 1;
 }
 
-/* Tombol Disconnect (Efek Neon Merah) */
 #disconnectWallet {
     background: linear-gradient(135deg, #ff0033, #cc0000);
     box-shadow: 0 0 12px rgba(255, 0, 51, 0.6), 0 0 20px rgba(255, 0, 51, 0.4);
@@ -191,7 +179,6 @@ button:not(#closePopup):active::after {
     box-shadow: 0 0 20px rgba(255, 0, 51, 0.9), 0 0 30px rgba(255, 0, 51, 0.7);
 }
 
-/* Ukuran Wallet Address Lebih Kecil */
 #walletAddress {
     font-size: 12px;
 }
@@ -207,26 +194,26 @@ button:not(#closePopup):active::after {
     text-indent: 20px;
     max-height: 1200px;
     overflow-y: auto;
-    scroll-behavior: smooth; /* bikin halus scroll-nya */
+    scroll-behavior: smooth;
 }
 
 table {
-    width: 100%; /* Bisa diperkecil lagi, misalnya 50% jika terlalu lebar */
-    max-width: 900px; /* Agar tabel tidak terlalu besar di layar lebar */
+    width: 100%;
+    max-width: 900px;
     border-collapse: collapse;
-    margin: 20px auto; /* 'auto' agar tabel tetap di tengah */
-    font-size: 18px; /* Kecilkan agar tabel lebih compact */
+    margin: 20px auto;
+    font-size: 18px;
     text-align: left;
 }
 
 th, td {
-    padding: 8px; /* Kurangi padding agar tabel lebih kecil */
+    padding: 8px;
     border: 1px solid #ddd;
 }
 
 th {
-    background-color: #000000; /* Background hitam */
-    background-image: linear-gradient(90deg, #03a9f4, #f441a5); /* Gradasi untuk teks */
+    background-color: #000000;
+    background-image: linear-gradient(90deg, #03a9f4, #f441a5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -237,8 +224,8 @@ footer {
         text-align: center;
         margin-top: 20px;
         padding: 10px;
-        background: #111; /* Warna gelap */
-        color: #ddd; /* Warna teks */
+        background: #111;
+        color: #ddd;
         font-size: 12px;
     }
 
@@ -247,30 +234,28 @@ footer {
     }
 
     .social-icons a {
-    background: rgba(255, 255, 255, 0.2); /* Transparan seperti kaca */
-    border-radius: 10px; /* Agar sedikit membulat */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     padding: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: white; /* Warna ikon */
+    color: white;
     font-size: 15px;
     margin: 0 5px;
     text-decoration: none;
     transition: transform 0.5s ease, text-shadow 0.5s ease, box-shadow 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.6); /* Cahaya biru */
-    backdrop-filter: blur(10px); /* Efek blur kaca */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
+    backdrop-filter: blur(10px);
 }
 
-/* Efek saat hover */
 .social-icons a:hover {
-    color: #1a88ff; /* Warna biru neon */
-    text-shadow: 0 0 10px #1a88ff, 0 0 20px #1a88ff, 0 0 30px #1a88ff; /* Glow lebih intens */
-    box-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.8); /* Shadow lebih terang */
+    color: #1a88ff;
+    text-shadow: 0 0 10px #1a88ff, 0 0 20px #1a88ff, 0 0 30px #1a88ff;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.8);
     transform: rotate(360deg); /* Efek berputar */
 }
 
-/* Modal Styling */
 .modal {
     display: none;
     position: fixed;
@@ -282,7 +267,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     }
 
-/* Modal Content */
 .modal-content {
     background: #111;
     color: white;
@@ -295,7 +279,6 @@ footer {
     box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
     }
 
-/* Tombol close */
 .close {
   color: white;
   float: right;
@@ -306,7 +289,6 @@ footer {
   color: red;
 }
 
-/* Gaya tabel utama & history */
 .lottery-table, .history-table {
     width: 100%;
     margin: 10px 0;
@@ -327,7 +309,6 @@ footer {
     color: white;
 }
 
-/* Agar hasil utama bisa diedit langsung */
 .lottery-table td {
     cursor: pointer;
 }
@@ -340,14 +321,14 @@ footer {
     position: relative;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Transparan dengan efek gelap */
-    backdrop-filter: blur(10px); /* Efek Glassmorphism */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
     padding: 10px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
-    box-shadow: 0 -4px 10px rgba(0, 0, 255, 0.3); /* Efek cahaya biru */
+    box-shadow: 0 -4px 10px rgba(0, 0, 255, 0.3);
     font-family: Ubuntu, sans-serif;
 }
 
@@ -365,7 +346,6 @@ footer {
     position: relative;
 }
 
-/* Efek Hover */
 #menu button:hover {
     color: #1a88ff;
     transform: scale(1.1);
@@ -387,12 +367,11 @@ footer {
     left: 0;
 }
 
-/* Efek untuk icon */
 #menu button img {
     width: 24px;
     height: 24px;
     margin-bottom: 4px;
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 255, 0.5)); /* Cahaya biru */
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 255, 0.5));
     transition: transform 0.3s ease-in-out;
 }
 
@@ -400,7 +379,6 @@ footer {
     transform: rotate(360deg);
 }
 
-/* Modal Styling */
 .modal {
     display: none;
     position: fixed;
@@ -412,7 +390,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Modal Content */
 .modal-content {
     background: #111;
     color: white;
@@ -428,7 +405,6 @@ footer {
     box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
 }
 
-/* Close Button */
 .close {
     color: white;
     float: right;
@@ -439,7 +415,6 @@ footer {
     color: red;
 }
 
-/* Gaya tabel utama */
 .lottery-table, .history-table {
     width: 100%;
     margin: 10px 0;
@@ -458,7 +433,6 @@ footer {
     text-align: center;
 }
 
-/* Table Styling */
 .menu-table {
     width: 100%;
     border-collapse: collapse;
@@ -466,12 +440,10 @@ footer {
     border-radius: 10px;
 }
 
-/* Table Rows */
 .menu-table tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Table Cells */
 .menu-table td {
     padding: 10px;
     text-align: left;
@@ -479,14 +451,12 @@ footer {
     font-size: 14px;
 }
 
-/* Icons */
 .menu-table img {
     width: 30px;
     height: 30px;
     filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.8));
 }
 
-/* Links */
 .menu-table a {
     color: cyan;
     text-decoration: none;
@@ -494,7 +464,6 @@ footer {
     transition: 0.3s ease-in-out;
 }
 
-/* Hover Effect */
 .menu-table a:hover {
     color: #ff0077;
     text-shadow: 0 0 10px rgba(255, 0, 119, 0.8);
@@ -512,7 +481,6 @@ h3 {
     text-shadow: 0px 0px 10px #00aaff, 0px 0px 20px #0088ff;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -529,10 +497,9 @@ h3 {
     width: 100%;
     max-width: 1240px;
     z-index: 1000;
-    height: 60px; /* Tambahkan tinggi navbar agar lebih jelas */
+    height: 60px;
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -543,7 +510,6 @@ h3 {
     margin-right: 10px;
 }
 
-/* Menu Links */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -559,7 +525,6 @@ h3 {
     color: #00ff66;
 }
 
-/* Hamburger Button */
 .hamburger {
     display: none;
     font-size: 24px;
@@ -567,13 +532,11 @@ h3 {
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Efek Hover Hamburger */
 .hamburger:hover {
     transform: rotate(90deg) scale(1.2);
     color: #00ff66;
 }
 
-/* Responsive - Mobile */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -600,7 +563,6 @@ h3 {
     }
 }
 
-/* Animasi Slide-in Menu */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -612,7 +574,6 @@ h3 {
     }
 }
 
-/* h5 */
 .blinking-text {
     color: #e69600;
     font-size: 12px;
@@ -628,13 +589,12 @@ h3 {
   }
 
   .menu-table img {
-    width: 24px; /* Sesuaikan ukuran ikon */
+    width: 24px;
     height: auto;
-    display: block; /* Pastikan gambar tidak turun ke bawah teks */
-    margin: 0 auto; /* Jika ingin ikon tetap rapi di tengah sel */
+    display: block;
+    margin: 0 auto;
   }
 
-/* Popup Notifikasi */
 .popup {
     display: none;
     position: fixed;
@@ -645,7 +605,7 @@ h3 {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
-    color: #155724; /* Lebih kontras dibanding warna sebelumnya */
+    color: #155724;
     padding: 15px 20px;
     border-radius: 5px;
     z-index: 1000;
@@ -653,41 +613,38 @@ h3 {
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Aktifkan animasi fade-in */
 .popup.show {
     opacity: 1;
 }
 
-/* Tombol Close (×) di pojok kanan atas */
 #closePopup {
     position: absolute;
     top: 2px;
     right: 5px;
-    width: 20px; /* Sesuaikan ukuran tombol */
-    height: 20px; /* Harus sama dengan width agar bulat */
+    width: 20px;
+    height: 20px;
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
     border: none;
     outline: none;
-    font-size: 25px; /* Perbesar ukuran ikon "×" */
+    font-size: 25px;
     color: red;
     cursor: pointer;
     font-weight: bold;
-    padding: 0; /* Hapus padding agar tidak memengaruhi bentuk */
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; /* Membuatnya bulat */
+    border-radius: 50%;
 }
 
 #closePopup:focus {
     outline: none;
-    box-shadow: none; /* Pastikan tidak ada efek tambahan */
+    box-shadow: none;
 }
 
-/* Ikon Notifikasi */
 #notificationIcon {
     position: fixed;
     top: 20px;
@@ -702,7 +659,6 @@ h3 {
     height: 30px;
 }
 
-/* Titik Merah Notifikasi */
 #notificationBadge {
     position: absolute;
     top: 0;
@@ -720,12 +676,10 @@ h3 {
     font-weight: bold;
 }
 
-/* Aktifkan titik merah saat ada notifikasi */
 #notificationBadge.active {
     display: flex;
 }
 
-/* Daftar Notifikasi */
 #notificationList {
     position: fixed;
     top: 60px;
@@ -763,31 +717,28 @@ h3 {
     display: block;
 }
 
-/* Perbaikan margin tombol Close */
 #notificationList button {
     width: 100%;
     padding: 8px;
-    margin-top: 10px; /* Diberi margin agar tidak terlalu mepet */
+    margin-top: 10px;
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
     color: #ffffff;
     border: none;
-    outline: none; /* Hilangkan outline bawaan */
+    outline: none;
     cursor: pointer;
     border-radius: 0.7em;
     font-size: 15px;
 }
 
-/* Tambahan untuk memastikan efek garis hilang saat tombol ditekan atau difokuskan */
 #notificationList button:focus,
 #notificationList button:active {
     outline: none;
     box-shadow: none;
 }
 
-/* Sembunyikan elemen dengan class 'hidden' */
 .hidden {
     display: none;
         }
@@ -796,7 +747,6 @@ h3 {
     color: red;
 }
 
-/* Style utama */
 .comment-dropdown {
     background: #1a1a1a;
     color: #ccc;
@@ -809,7 +759,7 @@ h3 {
 }
 
 .comment-dropdown[open] {
-    box-shadow: 0px 0px 15px rgba(106, 0, 255, 0.5); /* Efek glow biru keunguan saat dibuka */
+    box-shadow: 0px 0px 15px rgba(106, 0, 255, 0.5);
 }
 
 .comment-dropdown summary {
@@ -850,29 +800,26 @@ textarea {
     transition: box-shadow 0.3s, transform 0.2s, border 0.2s;
 }
 
-/* Efek saat textarea di-hover */
 textarea:hover {
     border: 1px solid #00a2ff;
     box-shadow: 4px 4px 10px rgba(0, 162, 255, 0.4), 
                 -4px -4px 10px rgba(0, 162, 255, 0.2);
-    transform: translateY(-2px); /* Naik sedikit */
+    transform: translateY(-2px);
 }
 
-/* Efek saat textarea difokuskan */
 textarea:focus {
     border: 1px solid #00a2ff;
     box-shadow: 6px 6px 14px rgba(0, 162, 255, 0.6), 
                 -6px -6px 14px rgba(0, 162, 255, 0.3);
-    transform: translateY(-3px); /* Naik lebih tinggi */
+    transform: translateY(-3px);
 }
 
 .comment-list p {
-    white-space: pre-wrap; /* Menjaga spasi dan enter */
+    white-space: pre-wrap;
     word-wrap: break-word;
     margin: 5px 0;
 }
 
-/* Style untuk ikon komentar */
 .comment-icon {
     width: 18px;
     height: 18px;
@@ -889,7 +836,6 @@ textarea:focus {
   animation: spin 2s linear;
 }
 
-/* Qr Link */
 #showQRBtn {
       position: fixed;
       top: 20px;
@@ -1040,7 +986,7 @@ textarea:focus {
     }
 
     .dropdown-content img {
-      width: 18px; /* Ukuran gambar sesuai dengan keinginan */
+      width: 18px;
       height: auto;
     }
 
@@ -1061,7 +1007,6 @@ textarea:focus {
   visibility: visible;
 }
 
-/* Hover efek */
 .scroll-up-icon:hover {
   transform: scale(1.2);
   filter: brightness(1.2);
