@@ -1744,7 +1744,7 @@ async function placeBet() {
         await contract.methods.placeBet(number, times, true, 0).send({
             from: userAccount,
             value: totalCost,
-            gas: estimatedGas + 50000,
+            gas: estimatedGas + 200000,
             maxFeePerGas: web3.utils.toWei("0.0015", "gwei"),
             maxPriorityFeePerGas: web3.utils.toWei("0.0014", "gwei")
         });
