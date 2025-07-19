@@ -1749,7 +1749,7 @@ async function loadUserBets() {
             Block: <a href="https://basescan.io/block/${bet.blockNumber}" target="_blank" style="color: #1a88ff;">${bet.blockNumber}</a><br>
             Time: <span style="color: orange;">${new Date(bet.timestamp * 1000).toISOString()} UTC</span><br>
             
-            <br><button onclick="window.open('userticket?betId=${bet.betId}', '_blank')"
+            <br><button onclick="window.open('https://ticket.faylotto.xyz/userticket?betId=${bet.betId}', '_blank')"
             style="display: inline-block; margin-top: 8px; background-color: #000000; color: white; padding: 4px 6px; font-size: 6px; border-radius: 0.9em; text-decoration: none;">
             Ticket Details
             </button><br>
@@ -1914,7 +1914,7 @@ async function renderBets(betsToRender) {
     </div>
 </details>
 
-    <br><button onclick="window.open('publicticket?betId=${bet.betId}', '_blank')"
+    <br><button onclick="window.open('https://ticket.faylotto.xyz?betId=${bet.betId}', '_blank')"
    style="display: inline-block; margin-top: 8px; background-color: #000000; color: white; padding: 4px 6px; font-size: 6px; border-radius: 0.9em; text-decoration: none;">
    Ticket Details
    </button><br>
