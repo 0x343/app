@@ -1092,12 +1092,18 @@ textarea:focus {
         Pools <span class="arrow">▼</span>
       </button>
       <div class="dropdown-content">
-        <a href="hk"><img src="img/hk.svg"> Hongkong (HK)</a>
-        <a href="sgp"><img src="img/sgp.svg"> Singapore (SGP)</a>
-        <a href="syd"><img src="img/syd.svg"> Sydney (SYD)</a>
-        <a href="chi"><img src="img/chi.svg"> China (CHI)</a>
-        <a href="mc"><img src="img/mc.svg"> Cambodia (MC)</a>
-        <a href="be"><img src="img/be.svg"> Bull Eye (BE)</a>
+        <a href="index"><img src="img/hk.svg"> Hongkong (HK)</a>
+        <a href="cs"><img src="img/sgp.svg"> Singapore (SGP)</a>
+        <a href="cs"><img src="img/syd.svg"> Sydney (SYD)</a>
+        <a href="cs"><img src="img/chi.svg"> China (CHI)</a>
+        <a href="cs"><img src="img/mc.svg"> Cambodia (MC)</a>
+        <a href="cs"><img src="img/be.svg"> Bull Eye (BE)</a>
+        <a href="cs"><img src="img/tw.svg"> Taiwan (HK)</a>
+        <a href="cs"><img src="img/mls.svg"> Malaysia (SGP)</a>
+        <a href="cs"><img src="img/mac.svg"> Macau (SYD)</a>
+        <a href="cs"><img src="img/jp.svg"> Japan (CHI)</a>
+        <a href="cs"><img src="img/vt.svg"> Vietnam (MC)</a>
+        <a href="cs"><img src="img/ls.svg"> Laos (BE)</a>
       </div>
     </div>
 
@@ -1106,15 +1112,15 @@ textarea:focus {
         Select Chain <span class="arrow">▼</span>
       </button>
       <div class="dropdown-content">
-        <a href="hk"><img src="img/base.svg"> Base</a>
-        <a href="hkbnb"><img src="img/opbnb.svg"> Smart Chain</a>
-        <a href="hkarb"><img src="img/arb.svg"> Arbitrum</a>
-        <a href="hkop"><img src="img/op.svg"> Optimism</a>
-        <a href="hkpl"><img src="img/polygon.svg"> Polygon</a>
-        <a href="hkavax"><img src="img/avax.svg"> Avalance</a>
-        <a href="hkopbnb"><img src="img/opbnb.svg"> OpBNB</a>
-        <a href="hketh"><img src="img/eth.svg"> Ethereum</a>
-        <a href="hkcore"><img src="img/core.svg"> Core</a>
+        <a href="index"><img src="img/base.svg"> Base</a>
+        <a href="cs"><img src="img/opbnb.svg"> Smart Chain</a>
+        <a href="cs"><img src="img/arb.svg"> Arbitrum</a>
+        <a href="cs"><img src="img/op.svg"> Optimism</a>
+        <a href="cs"><img src="img/polygon.svg"> Polygon</a>
+        <a href="cs"><img src="img/avax.svg"> Avalance</a>
+        <a href="cs"><img src="img/opbnb.svg"> OpBNB</a>
+        <a href="cd"><img src="img/eth.svg"> Ethereum</a>
+        <a href="cs"><img src="img/core.svg"> Core</a>
       </div>
     </div>
         </div><br>
@@ -1196,7 +1202,7 @@ textarea:focus {
     <button onclick="openModal('https//analitycs.faylotto.xyz', '_blank')"><img src="img/pools.svg" alt="Lotto">Statistics</button>
     <button onclick="window.open('https//analitycs.faylotto.xyz/tools', '_blank')"><img src="img/tools.svg" alt="Lotto">Tools</button>
     <button onclick="openModal('myModal')"><img src="img/mybet.svg" alt="Lotto">Ticket</button>
-    <button onclick="openModal('https//analitycs.faylotto.xyz/result, '_blank'')"><img src="img/results.svg" alt="Lotto"> Results</button>
+    <button onclick="openModal('https//analitycs.faylotto.xyz/results, '_blank'')"><img src="img/results.svg" alt="Lotto"> Results</button>
     <button onclick="window.open('https//claim.faylotto.xyz', '_blank')"><img src="img/claim.svg" alt="Lotto" style="width: 28px; height: 28px;">Claim</button>
 </div>
        
@@ -2330,7 +2336,7 @@ function closeLikeModal(betId) {
   const popupDiv = document.createElement("div");
   popupDiv.id = "popupLotto";
   popupDiv.innerHTML = `
-    <div class="popup-text">Welcome to Faylotto, Decentralized Betting Web3 Social, enjoy & playing!</div>
+    <div class="popup-text">Welcome to Faylotto. Enjoy & playing!</div>
   `;
 
     const style = document.createElement("style");
